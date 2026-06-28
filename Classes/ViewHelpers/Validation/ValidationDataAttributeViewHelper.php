@@ -219,9 +219,9 @@ class ValidationDataAttributeViewHelper extends AbstractValidationViewHelper
                  */
             case 5:
                 if ($this->isNativeValidationEnabled()) {
-                    $additionalAttributes['pattern'] = '[A-Za-z]+';
+                    $additionalAttributes['pattern'] = '^[A-Za-z]+$';
                 } elseif ($this->isClientValidationEnabled()) {
-                    $additionalAttributes['data-powermail-pattern'] = '[a-zA-Z]+';
+                    $additionalAttributes['data-powermail-pattern'] = '^[a-zA-Z]+$';
                 }
 
                 break;
